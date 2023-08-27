@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+  <style>
+    .text{
+      margin-top: -600px;
+      margin-left: 1000px;
+      text-align: justify;
+      margin-right: 80px;
+
+    }
+    .text p{
+      font-size: 20px;
+
+    }
+    .b{
+      margin-left: 50px;
+    }
+  </style>
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <img src="https://www.nicepng.com/png/full/16-165556_dumbbells-clipart-group-fitness-weights-icon-white-png.png" width="40" height="32" role="img" aria-label="Bootstrap" class="bi me-2"><use xlink:href="#bootstrap"></use>
+            </a>
+
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-2 text-secondary">AI Exercise</a></li>
+              <li><a href="{% url 'ai_pushup' %}" class="nav-link px-2 text-white">Push Up</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Squats</a></li>
+              <li><a href="{% url 'ai_situp' %}" class="nav-link px-2 text-white">Sit Up</a></li>
+              <li><a href="{% url 'ai_biceps' %}" class="nav-link px-2 text-white">Bicep Curl</a></li>
+              <li><a href="{% url 'ai_result' %}" class="nav-link px-2 text-white">Result</a></li>
+            </ul>
+
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+            </form>
+            <div class="flex-shrink-0 dropdown">
+                <a href="#" class="d-block link-light text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="https://www.citypng.com/public/uploads/preview/white-user-member-guest-icon-png-image-31634946729lnhivlto5f.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                </a>
+                <ul class="dropdown-menu text-small shadow">
+                  <li><a class="dropdown-item" href="{% url 'logout' %}">Sign out</a></li>
+                </ul>
+              </div>
+
+          </div>
+        </div>
+      </header><br>
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      <span class="fs-4"><div class="b"><h1>Squats</h1></div></span>
+      <br>
+      <img src="{% url 'squats_feed' %}" class="img-fluid" alt="..." style="margin-left: 50px;" width="900px">
+      <div class="text">
+        <h1>Instructions</h1><br>
+        <p>
+
+
+          1,Stand with your feet shoulder width apart and your arms stretched forward, then lower your body until your thighs are parallel with the floor<br><br>
+          2,Lower your body until your thighs are parallel to the floor.<br><br>
+          3,Pause, then return to the starting position.<br><br>
+          4,Repeat.<br><br>
+</P>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
